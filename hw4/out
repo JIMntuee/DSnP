@@ -1,0 +1,182 @@
+mtest> mtreset 590
+Resetting memMgr...(592)
+
+mtest> mtnew 3
+Calling alloc...(84)
+Calling MemMgr::getMem...(84)
+Memory acquired... 0x561a7c798a20
+Calling alloc...(84)
+Calling MemMgr::getMem...(84)
+Memory acquired... 0x561a7c798a78
+Calling alloc...(84)
+Calling MemMgr::getMem...(84)
+Memory acquired... 0x561a7c798ad0
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 592 Bytes
+* Number of blocks      : 1
+* Free mem in last block: 328
+* Recycle list          : 
+
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+ooo
+Array list ---
+
+
+mtest> mtdel -r 3
+Calling free...(0x561a7c798ad0)
+Calling free...(0x561a7c798a78)
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 592 Bytes
+* Number of blocks      : 1
+* Free mem in last block: 328
+* Recycle list          : 
+[  0] = 2         
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+oxx
+Array list ---
+
+
+mtest> mtnew 5 -a 3
+Calling allocArr...(260)
+Calling MemMgr::getMem...(260)
+Memory acquired... 0x561a7c798b28
+Calling allocArr...(260)
+Calling MemMgr::getMem...(260)
+New MemBlock... 0x561a7c7b0330
+Memory acquired... 0x561a7c798e70
+Calling allocArr...(260)
+Calling MemMgr::getMem...(260)
+Memory acquired... 0x561a7c798f78
+Calling allocArr...(260)
+Calling MemMgr::getMem...(260)
+New MemBlock... 0x561a7c7990d0
+Memory acquired... 0x561a7c799100
+Calling allocArr...(260)
+Calling MemMgr::getMem...(260)
+Memory acquired... 0x561a7c799208
+yee
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 592 Bytes
+* Number of blocks      : 3
+* Free mem in last block: 64
+* Recycle list          : 
+[  0] = 2         
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+oxx
+Array list ---
+ooooo
+
+mtest> mtdel -r 2 -a
+Calling freeArr...(0x561a7c799100)
+>> Array size = 3
+Recycling 0x561a7c799100 to _recycleList[3]
+Calling freeArr...(0x561a7c799208)
+>> Array size = 3
+Recycling 0x561a7c799208 to _recycleList[3]
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 592 Bytes
+* Number of blocks      : 3
+* Free mem in last block: 64
+* Recycle list          : 
+[  0] = 2         [  3] = 2         
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+oxx
+Array list ---
+oooxx
+
+mtest> mtnew -a 2 3
+Calling allocArr...(176)
+Calling MemMgr::getMem...(176)
+New MemBlock... 0x561a7c799360
+Memory acquired... 0x561a7c7995a0
+Calling allocArr...(176)
+Calling MemMgr::getMem...(176)
+Memory acquired... 0x561a7c799650
+Calling allocArr...(176)
+Calling MemMgr::getMem...(176)
+Memory acquired... 0x561a7c799700
+yee
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 592 Bytes
+* Number of blocks      : 4
+* Free mem in last block: 64
+* Recycle list          : 
+[  0] = 2         [  3] = 2         
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+oxx
+Array list ---
+oooxxooo
+
+mtest> mtnew -a 5 3
+Calling allocArr...(428)
+Calling MemMgr::getMem...(428)
+New MemBlock... 0x561a7c799800
+Memory acquired... 0x561a7c799830
+Calling allocArr...(428)
+Calling MemMgr::getMem...(428)
+Recycling 0 to _recycleList[1]
+New MemBlock... 0x561a7c799a90
+Memory acquired... 0x561a7c799ac0
+Calling allocArr...(428)
+Calling MemMgr::getMem...(428)
+Recycling 0 to _recycleList[1]
+New MemBlock... 0x561a7c799d20
+Memory acquired... 0x561a7c799d50
+yee
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 592 Bytes
+* Number of blocks      : 7
+* Free mem in last block: 160
+* Recycle list          : 
+[  0] = 2         [  1] = 2         [  3] = 2         
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+oxx
+Array list ---
+oooxxoooooo
+
+mtest> mtnew -a 7 2
+Calling allocArr...(596)
+Calling MemMgr::getMem...(596)
+Requested memory (600) is greater than block size(592). Exception raised...
