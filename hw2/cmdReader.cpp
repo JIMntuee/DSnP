@@ -68,7 +68,7 @@ CmdParser::readCmdInt(istream& istr)
          case PG_UP_KEY      : moveToHistory(_historyIdx - PG_OFFSET); break;
          case PG_DOWN_KEY    : moveToHistory(_historyIdx + PG_OFFSET); break;
          case TAB_KEY        : {
-            /* TODO */ 
+            /* TODO: */ 
             int ptr_position = _readBufPtr - _readBuf;
             insertChar(' ', 8 - (ptr_position%8));
             break;
@@ -98,10 +98,10 @@ CmdParser::readCmdInt(istream& istr)
 // [Note] This function can also be called by other member functions below
 //        to move the _readBufPtr to proper position.
 bool
-CmdParser::moveBufPtr(char* const ptr)
+CmdParser::moveBufPtr(char* const ptr)//FIXME:
 {  
    int move = abs(_readBufPtr - ptr);
-   if(_readBufEnd < ptr || ptr < _readBuf){
+   if(ptr < _readBuf || _readBufEnd < ptr){
       mybeep();
       return false;
    }
@@ -145,7 +145,7 @@ CmdParser::moveBufPtr(char* const ptr)
 bool
 CmdParser::deleteChar()
 {
-   // TODO...
+   // TODO:...
    int end_position = _readBufEnd - _readBuf;
    int ptr_position = _readBufPtr - _readBuf;
    int mag = end_position - ptr_position ;//mag of string at right
@@ -193,8 +193,10 @@ CmdParser::deleteChar()
 void
 CmdParser::insertChar(char ch, int repeat)
 {
-   // TODO...
+   // TODO:...
    //char temp[READ_BUF_SIZE];// record string at right
+   assert(repeat >= 1);
+   
    int end_position = _readBufEnd - _readBuf;
    int ptr_position = _readBufPtr - _readBuf;
    int mag =  end_position - ptr_position;//mag of string at right
@@ -215,7 +217,6 @@ CmdParser::insertChar(char ch, int repeat)
    _readBufEnd += repeat;
 
 
-   assert(repeat >= 1);
 }
 
 // 1. Delete the line that is currently shown on the screen
@@ -235,7 +236,7 @@ CmdParser::insertChar(char ch, int repeat)
 void
 CmdParser::deleteLine()
 {
-   // TODO...
+   // TODO:...
    int end_position = _readBufEnd - _readBuf;
    moveBufPtr(_readBuf);
    for(int i = 0; i < end_position; i++){
@@ -266,7 +267,7 @@ CmdParser::deleteLine()
 void
 CmdParser::moveToHistory(int index)
 {
-   // TODO...
+   // TODO:...
    if(index < _historyIdx){// check history upward
       if(_historyIdx == 0){
          mybeep();
@@ -314,9 +315,9 @@ CmdParser::moveToHistory(int index)
 // 5. Reset _historyIdx to _history.size() // for future insertion
 //
 void
-CmdParser::addHistory()
+CmdParser::addHistory()//FIXME:
 {
-   // TODO...
+   // TODO:...
    //null string return
    if(_readBuf[0] == '\0'){
       return;
@@ -328,42 +329,37 @@ CmdParser::addHistory()
       _historyIdx = _history.size();
    }
 
-   //delete ' ' at the begining
-   int end_position = _readBufEnd - _readBuf;
+   string tmp = _readBuf;
    int count = 0;
-   moveBufPtr(_readBuf);
-   for(int i = 0; i < end_position; i++){
-      if(_readBuf[0] != ' ')  break;
-      else if(i == end_position-1)  return;
-      else  {deleteChar(); count++;}
+   int str_size = tmp.size();
+
+   //delete ' ' at the begining
+   for(size_t i = 0; i < str_size; i++){
+      if(tmp[i] != ' ') break;
+      else if(i == str_size-1) return;//empty string
+      else count++;
    }
-   
+   for(size_t i = 0; i < str_size-count; i++){
+      tmp[i] = tmp[i+count];
+   }
+   tmp.resize(str_size-count);
+   count = 0;
+   str_size = tmp.size();
+
    //delete ' ' at the end
-   end_position = _readBufEnd - _readBuf;
-   moveBufPtr(_readBufEnd-1);
-   for(int i = end_position - 1; i > 0; i--){
-      if(_readBuf[i] != ' ')   break;
-      else{
-         deleteChar();
-         moveBufPtr(_readBufPtr-1);
-      }
+   for(size_t i = str_size-1; i > 0; i--){
+      if(tmp[i] != ' ') break;
+      else  count++;
    }
+   tmp.resize(str_size-count);
 
-   string str;
-   str = _readBuf;
-   _history.push_back(str);
+   _history.push_back(tmp);
 
-   moveBufPtr(_readBuf);
-   for(int i = 0; i < count; i++){
-      cout << ' ';
-   }
-   cout << str;
-
-   for(int i = 0; i < end_position; i++){
+   size_t end_position = _readBufEnd - _readBuf;
+   for(size_t i = 0; i < end_position; i++){
       _readBuf[i] = '\0';
    }
 
-   _readBufEnd = _readBufPtr = _readBuf;
    _historyIdx = _history.size();
 
 }
