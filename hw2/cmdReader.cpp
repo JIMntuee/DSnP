@@ -98,7 +98,7 @@ CmdParser::readCmdInt(istream& istr)
 // [Note] This function can also be called by other member functions below
 //        to move the _readBufPtr to proper position.
 bool
-CmdParser::moveBufPtr(char* const ptr)//FIXME:
+CmdParser::moveBufPtr(char* const ptr)//
 {  
    int move = abs(_readBufPtr - ptr);
    if(ptr < _readBuf || _readBufEnd < ptr){
@@ -194,7 +194,6 @@ void
 CmdParser::insertChar(char ch, int repeat)
 {
    // TODO:...
-   //char temp[READ_BUF_SIZE];// record string at right
    assert(repeat >= 1);
    
    int end_position = _readBufEnd - _readBuf;
@@ -213,10 +212,8 @@ CmdParser::insertChar(char ch, int repeat)
       _readBufPtr++;
    }
 
-   moveBufPtr(_readBufPtr - mag);
    _readBufEnd += repeat;
-
-
+   moveBufPtr(_readBufPtr - mag);
 }
 
 // 1. Delete the line that is currently shown on the screen
@@ -315,7 +312,7 @@ CmdParser::moveToHistory(int index)
 // 5. Reset _historyIdx to _history.size() // for future insertion
 //
 void
-CmdParser::addHistory()//FIXME:
+CmdParser::addHistory()//
 {
    // TODO:...
    //null string return
