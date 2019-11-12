@@ -43,6 +43,7 @@ public:
    void max();
    void min();
    void add();
+   size_t GetTok(const string&, string&, size_t, const char);
    int size;
    bool check(); //true for 0 element
 private:

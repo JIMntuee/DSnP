@@ -1,0 +1,54 @@
+Please enter the file name: File "test4.json" was read in successfully.
+Enter command: {
+}
+Enter command: Error: No element found!!
+Enter command: Error: No element found!!
+Enter command: Error: No element found!!
+Enter command: Error: Illegal argument "J"!!
+Enter command: Error: Illegal argument "AOSIDH"!!
+Enter command: Enter command: Enter command: Error: Illegal argument "SADSF"!!
+Enter command: {
+  "123" : 345,
+  "E" : 10000
+}
+Enter command: The minimum element is: { "123" : 345 }.
+Enter command: {
+  "123" : 345,
+  "E" : 10000
+}
+Enter command: The summation of the values is: 10345.
+Enter command: The average of the values is: 5172.5.
+Enter command: Enter command: The minimum element is: { "JIM" : 10 }.
+Enter command: Enter command: The maximum element is: { "E" : 10000 }.
+Enter command: The summation of the values is: 10374.
+Enter command: {
+  "123" : 345,
+  "E" : 10000,
+  "JIM" : 10,
+  "HU" : 19
+}
+Enter command: The summation of the values is: 10374.
+Enter command: Enter command: Enter command: The summation of the values is: 19375.
+Enter command: Error: Missing argument!!
+Enter command: {
+  "123" : 345,
+  "E" : 10000,
+  "JIM" : 10,
+  "HU" : 19,
+  "ahsdf" : 1,
+  "wsutgh" : 9000
+}
+Enter command: Error: Missing argument!!
+Enter command: Error: unknown command: "aosdijf"
+Enter command: Error: Illegal argument "a"!!
+Enter command: {
+  "123" : 345,
+  "E" : 10000,
+  "JIM" : 10,
+  "HU" : 19,
+  "ahsdf" : 1,
+  "wsutgh" : 9000
+}
+Enter command: The minimum element is: { "ahsdf" : 1 }.
+Enter command: Error: unknown command: "sdjafi"
+Enter command: 

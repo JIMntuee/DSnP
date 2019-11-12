@@ -30,12 +30,21 @@ int main()
    cout << "Enter command: ";
 
    while (true) {
+      string a;
       cin >> command;
       if(command == "EXIT") return 0;
-      else if(command == "ADD")  json.add();
+      else if(command == "ADD"){
+         try{
+            json.add();
+         } catch(string str){
+            cerr << str << endl;
+            cout << "Enter command: ";
+            continue;
+         }
+      }  
       else if(command == "PRINT")  json.print();
       else if(json.check()){
-            cout << "Error: No element found!!" << endl;
+            cerr << "Error: No element found!!" << endl;
             cout << "Enter command: ";
             continue;
       }
@@ -43,6 +52,9 @@ int main()
       else if(command == "AVE")  json.avg();
       else if(command == "MAX")  json.max();
       else if(command == "MIN")  json.min();
+      else{
+         cerr << "Error: unknown command: "<< '\"' << command << '\"' << endl;
+      }
       cout << "Enter command: ";
    }
 }
