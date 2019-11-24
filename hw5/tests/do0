@@ -1,0 +1,78 @@
+adta -r 50000
+adtp
+adtd -r 1000
+adtp 
+adts
+adtp
+adtd -r 1000
+adts
+adtp
+usage
+adta -s jordan
+adtp
+adta -s jordano
+adtp
+adta -s jorda
+adtp
+adta -s jordan
+adtp
+adta -s jordana
+adtp
+adtd -s jordani
+adtp
+adtd -s jord
+adtp
+adta -r 30
+adtp
+adtd -front 5
+adtp
+adtd -back 5
+adtp
+adtd -r 5
+adtp
+adtd -all
+adtp
+adta -s 123
+adta -s 456
+adta -s 123
+adta -s 001
+adtp
+adtd -s 123
+adtp
+adtd -s 001
+adtp
+adtd -s 123
+adtp
+adtd -s 456
+adtp
+adtd -s 123
+adtp
+usage
+adta -s 123
+adta -s 456
+adta -s 123
+adta -s 001
+adts
+adtp
+adtd -s 123
+adtp
+adtd -s 001
+adtp
+adtd -s 123
+adtp
+adtd -s 456
+adtp
+adtd -s 123
+adtp
+usage
+adta -r 10000
+adtp
+adtp 9999
+adtp 10000
+adtp 0
+adtp -1
+adta -s ric
+adtq ric
+adtsort
+adtq ric
+q -f

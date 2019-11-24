@@ -1,0 +1,6 @@
+adtr 10000
+adta -r 100000
+usage
+adts
+usage
+q -f

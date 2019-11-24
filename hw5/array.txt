@@ -1,0 +1,18 @@
+adt> adtr 10000
+
+adt> adta -r 100000
+
+adt> usage
+Period time used : 25.65 seconds
+Total time used  : 25.65 seconds
+Total memory used: 1883 M Bytes
+
+adt> adts
+
+adt> usage
+Period time used : 1.14 seconds
+Total time used  : 26.79 seconds
+Total memory used: 1883 M Bytes
+
+adt> q -f
+
