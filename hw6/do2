@@ -1,0 +1,301 @@
+cirr tests.fraig/opt01.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.fraig/opt02.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.fraig/opt03.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.fraig/opt04.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.fraig/opt05.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.fraig/opt06.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.fraig/sim01.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.fraig/sim02.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.fraig/sim03.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.fraig/sim04.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.fraig/sim05.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.fraig/sim06.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.fraig/sim07.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.fraig/sim08.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.fraig/sim09.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.fraig/sim10.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.fraig/sim11.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.fraig/sim12.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.fraig/sim13.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.fraig/sim14.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.fraig/sim15.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.fraig/strash01.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 3 -fani 50
+cirg 7 -fano 10
+cirw
+cirr tests.fraig/strash02.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 3 -fani 50
+cirg 7 -fano 10
+cirw
+cirr tests.fraig/strash03.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 3 -fani 50
+cirg 7 -fano 10
+cirw
+cirr tests.fraig/strash04.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 3 -fani 50
+cirg 7 -fano 10
+cirw
+cirr tests.fraig/strash05.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 3 -fani 50
+cirg 7 -fano 10
+cirw
+cirr tests.fraig/strash06.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 3 -fani 50
+cirg 7 -fano 10
+cirw
+cirr tests.fraig/strash07.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 3 -fani 50
+cirg 7 -fano 10
+cirw
+cirr tests.fraig/strash08.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 3 -fani 50
+cirg 7 -fano 10
+cirw
+cirr tests.fraig/strash09.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 3 -fani 50
+cirg 7 -fano 10
+cirw
+cirr tests.fraig/strash10.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 3 -fani 50
+cirg 7 -fano 10
+cirw
+cirr tests.fraig/test1.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 3 -fani 50
+cirg 7 -fano 10
+cirg 123 -fani 30
+cirg 4259 -fano 10
+cirg 501 -fani 40
+cirw
+cirr tests.fraig/test2.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 3 -fani 50
+cirg 7 -fano 10
+cirw
+q -f

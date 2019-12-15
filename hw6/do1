@@ -1,0 +1,163 @@
+cirr tests.err/flt01.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.err/flt02.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.err/flt03.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.err/flt04.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.err/flt05.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.err/flt06.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.err/flt07.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.err/ok01.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.err/ok02.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.err/ok03.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.err/ok04.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.err/ok05.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.err/ok06.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.err/ok07.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.err/ok08.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.err/ok09.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.err/ok10.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.err/ok11.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+q -f

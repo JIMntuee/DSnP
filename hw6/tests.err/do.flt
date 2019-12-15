@@ -1,0 +1,55 @@
+cirr flt01.aag -replace
+cirp -n
+cirp -fl
+cirr flt02.aag -replace
+cirp -n
+cirp -fl
+cirr flt03.aag -replace
+cirp -n
+cirp -fl
+cirr flt04.aag -replace
+cirp -n
+cirp -fl
+cirr flt05.aag -replace
+cirp -n
+cirp -fl
+cirr flt06.aag -replace
+cirp -n
+cirp -fl
+cirr flt07.aag -replace
+cirp -n
+cirp -fl
+cirr ok01.aag -replace
+cirp -n
+cirp -fl
+cirr ok02.aag -replace
+cirp -n
+cirp -fl
+cirr ok03.aag -replace
+cirp -n
+cirp -fl
+cirr ok04.aag -replace
+cirp -n
+cirp -fl
+cirr ok05.aag -replace
+cirp -n
+cirp -fl
+cirr ok06.aag -replace
+cirp -n
+cirp -fl
+cirr ok07.aag -replace
+cirp -n
+cirp -fl
+cirr ok08.aag -replace
+cirp -n
+cirp -fl
+cirr ok09.aag -replace
+cirp -n
+cirp -fl
+cirr ok10.aag -replace
+cirp -n
+cirp -fl
+cirr ok11.aag -replace
+cirp -n
+cirp -fl
+q -f

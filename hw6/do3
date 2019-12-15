@@ -1,0 +1,119 @@
+cirr tests.fraig/ISCAS85/C17.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -po
+cirp -fl
+cirp -s
+cirp -s
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.fraig/ISCAS85/C432_r.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -fl
+cirp -po
+cirp -fl
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirw
+cirr tests.fraig/ISCAS85/C432.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -n
+cirp -po
+cirp -fl
+cirp -n
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirp -n
+cirw
+cirr tests.fraig/ISCAS85/C880.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -n
+cirp -po
+cirp -fl
+cirp -n
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirp -n
+cirw
+cirr tests.fraig/ISCAS85/C1355.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -n
+cirp -po
+cirp -fl
+cirp -n
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirp -n
+cirw
+cirr tests.fraig/ISCAS85/C1908.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -n
+cirp -po
+cirp -fl
+cirp -n
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirp -n
+cirw
+cirr tests.fraig/ISCAS85/C3540.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -n
+cirp -po
+cirp -fl
+cirp -n
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirp -n
+cirw
+cirr tests.fraig/ISCAS85/C5315.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -n
+cirp -po
+cirp -fl
+cirp -n
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirp -n
+cirw
+cirr tests.fraig/ISCAS85/C6288.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -n
+cirp -po
+cirp -fl
+cirp -n
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirp -n
+cirw
+cirr tests.fraig/ISCAS85/C7552.aag -replace
+cirp -s
+cirp -n
+cirp -pi
+cirp -n
+cirp -po
+cirp -fl
+cirp -n
+cirg 20 -fani 50
+cirg 18 -fano 10
+cirp -n
+cirw
+q -f
+
